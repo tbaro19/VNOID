@@ -1,5 +1,5 @@
 # VNOID
-Codes for Vietnam OpenInfra &amp;  Cloud Native Day 2025 - Topic: ARM64 Meets AI: Benchmarking LLM Performance and Efficiency Across GH200, H100 and A100
+Scripts for Vietnam OpenInfra &amp;  Cloud Native Day 2025 - Topic: ARM64 Meets AI: Benchmarking LLM Performance and Efficiency Across GH200, H100 and A100
 
 This directory contains scripts to benchmark the performance of large language models (LLMs) using [vLLM](https://github.com/vllm-project/vllm). These scripts help you measure throughput, latency, and the effect of CPU offloading on inference.
 
