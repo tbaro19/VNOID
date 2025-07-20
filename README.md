@@ -65,6 +65,7 @@ python3 bench_cpu_offload.py \
   --prompt <prompt_text> \
   --kv-cache-dtype <auto|fp8_e5m2|fp8_e4m3> \
   --max-model-len <max_context_length>
+  --batch-size <batch_size>
 ```
 
 **Arguments:**
@@ -74,6 +75,7 @@ python3 bench_cpu_offload.py \
 - `--prompt`: Prompt text for generation (default: a long essay prompt)
 - `--kv-cache-dtype`: Data type for KV cache (`auto`, `fp8_e5m2`, or `fp8_e4m3`; default: `auto`)
 - `--max-model-len`: Maximum context length (optional)
+- `--batch-size`: Number of prompts to process in parallel (default: 1)
 
 **Example:**
 ```bash
@@ -94,3 +96,4 @@ python3 bench_cpu_offload.py --model Menlo/Jan-nano --cpu-offload-gb 40 --num-to
 - [vLLM Documentation](https://vllm.readthedocs.io/en/latest/)
 - [Menlo/Jan-nano Model Card](https://huggingface.co/Menlo/Jan-nano)
 - [MoonshotAI/Kimi-K2-Instruct Model Card](https://huggingface.co/moonshotai/Kimi-K2-Instruct)
+- [Qwen/Qwen3-14B Model Card](https://huggingface.co/Qwen/Qwen3-14B)
