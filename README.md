@@ -62,7 +62,7 @@ python3 bench_cpu_offload.py \
   --model <model_name_or_path> \
   --cpu-offload-gb <GB_to_offload_to_CPU> \
   --num-tokens <output_tokens> \
-  --prompt <prompt_text> \
+  --prompts-file <path_to_prompts.txt> \
   --kv-cache-dtype <auto|fp8_e5m2|fp8_e4m3> \
   --max-model-len <max_context_length>
   --batch-size <batch_size>
@@ -72,7 +72,7 @@ python3 bench_cpu_offload.py \
 - `--model`: Model name or path (default: `meta-llama/Llama-3.1-70B`)
 - `--cpu-offload-gb`: Amount of model weights (in GB) to offload to CPU (default: 90)
 - `--num-tokens`: Number of output tokens to generate (default: 16)
-- `--prompt`: Prompt text for generation (default: a long essay prompt)
+- `--prompts-file`: Path to a text file with one prompt per line (default: `prompts.txt` in this directory)
 - `--kv-cache-dtype`: Data type for KV cache (`auto`, `fp8_e5m2`, or `fp8_e4m3`; default: `auto`)
 - `--max-model-len`: Maximum context length (optional)
 - `--batch-size`: Number of prompts to process in parallel (default: 1)
